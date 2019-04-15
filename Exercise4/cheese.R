@@ -68,7 +68,7 @@ for(i in 1:Store){
   BetaStore[i,,] = Beta_i
 }
 
-pdf(file='Plots')  
+# pdf(file='Plots')  
 
 ## Plot Posterior Estimates of Betas for store 1
 par(mfrow=c(2,2))
@@ -149,5 +149,5 @@ hist(newPNonDisp,breaks=40,main='Histogram of Optimal Non-Display Prices')
 hist(newPDisp,breaks=40,main='Histogram of Optimal Display Prices')
 median(newPNonDisp)
 median(newPDisp)
-dev.off()
+# dev.off()
 
